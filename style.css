@@ -1,0 +1,44 @@
+
+li{
+    color: white;
+}
+.qoute {
+text-align: center;
+}
+
+div{
+    border: 3px solid ;
+    background: aliceblue;
+}
+
+.last {
+    background:rgb(208, 118, 1);
+}
+
+.toppage {
+    width: 10000px;
+    height: 100px;
+    background: black;
+}
+
+body{
+    background: burlywood;
+}
+
+#royal {
+    color: #ffffff;
+    font-family: "Press Start 2P", Sans-serif;
+    font-size: 74px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.nav {
+    background: black;
+    width: auto;
+    height: 100px;]
+     background-position: center;
+}
+/* Style all font awesome icons */
+
