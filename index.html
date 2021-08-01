@@ -51,19 +51,119 @@
 		color: rgb(255, 255, 255);
 	}
 
+	* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  width: 10px;
+  height: 10px;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #000000;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
 	
 
 </style>
 
-<div class="nav" >
-	
+<div class="navbar">
+	<a href="index.html">Home</a>
+	<a href="contact.html">CONTACT US</a>
+	<a href="ragen.html">RAGEN</a>
+	<a href="violent.html">VIOLENT</a>
+	<a href="flame.html">FLAME</a>
+	<a href="cloudy.html">CLOUDY</a>
+	<a href="gravity.html">GRAVITY</a>
+	<a href="virus.html">VIRUS</a>
+	 <img class="navbartrc" src="trc1.png" alt="">
 </div>
+<section class="bg2">
+
+		
+
 
 
 
 </head>
-<body
->
+<body>
 	
 
 </div>
@@ -76,50 +176,137 @@
 <h3 class="qoute"> #WE ARE THE CHAMPIONS</h3>
 
 	<p  style="color: white; text-align:center ;"  > <u> WE BELIEVE IN OUT TEAMWORK AND HARDWORK . AND OUR GOAL IS TO WIN AND WE ARE WORKING HARD IN IT </u> </p>
-	<!--TRC-->
-<br>
-	
-	<br>
-	
-	<br>
-
-	<h1 style="font-family:verdana">ROASTER OF TRC</h1>
 	
 	
-	<li >  TRC・ViolenT (IGL/SCOUT) 
-		<a href="https://www.instagram.com/bipulshakya/" target="_blank">INSTAGRAM</a></li>
-	<li > TRC・CloudyX (ENTRY FRAGGER) <a href="https://www.instagram.com/sarthak_sthz/"  target="_blank">INSTAGRAM</a>
-	</li>
-	<li > TRC・FLAME (ASSAULTER/FILTER) <a href="https://www.instagram.com/trcflame/" target="_blank">INSTAGRAM</a></li>
-	<li > TRC・VIRUS (SUPPORT) <a href="https://www.instagram.com/manjilbajra/" target="_blank">INSTAGRAM</a> </li>
-	<li > TRC・RAGEN (ASSAULTER) <a href="https://www.instagram.com/maharzanragen/"
-			target="_blank">INSTAGRAM</a> </li>
 
-			<li> TRC・GravityX (FILTER) <a href="https://www.instagram.com/999shivesh/" target="_blank">INSTAGRAM</a> </li>
-</ul>
+<!-- Container for the image gallery -->
+<div class="container">
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+	<!-- Full-width images with number text -->
+	<div class="mySlides">
+		<div class="numbertext">1 / 6</div>
+		<img src="violent.jpg" style="width:100%">
+	</div>
 
-<div class="last" >
-<a href="contact.html">CONTACT US</a> 
-<br>
- <br> <a href="https://www.instagram.com/theroyalechampions/" target="_blank">INSTAGRAM</a>
+	<div class="mySlides">
+		<div class="numbertext">2 / 6</div>
+		<img src="ragen.jpg" style="width:100%">
+	</div>
 
-<br>
-<br> 
+	<div class="mySlides">
+		<div class="numbertext">3 / 6</div>
+		<img src="cloudy.jpg" style="width:100%">
+	</div>
+
+	<div class="mySlides">
+		<div class="numbertext">4 / 6</div>
+		<img src="virus.jpg" style="width:100%">
+	</div>
+
+	<div class="mySlides">
+		<div class="numbertext">5 / 6</div>
+		<img src="gravity.jpg" style="width:100%">
+	</div>
+
+	<div class="mySlides">
+		<div class="numbertext">6 / 6</div>
+		<img src="flame.jpg" style="width:100%">
+	</div>
+
+	<!-- Next and previous buttons -->
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+	<!-- Image text -->
+	<div class="caption-container">
+		<p id="caption"></p>
+	</div>
+
+	<!-- Thumbnail images -->
+	<div class="row">
+		<div class="column">
+			<img class="demo cursor" src="violent.jpg" style="width:100%" onclick="currentSlide(1)" alt="TRC・ViolenT">
+		</div>
+		<div class="column">
+			<img class="demo cursor" src="ragen.jpg" style="width:100%" onclick="currentSlide(2)"
+				alt="TRC・RAGEN">
+		</div>
+		<div class="column">
+			<img class="demo cursor" src="cloudy.jpg" style="width:100%" onclick="currentSlide(3)"
+				alt="TRC・CloudyX">
+		</div>
+		<div class="column">
+			<img class="demo cursor" src="virus.jpg" style="width:100%" onclick="currentSlide(4)"
+				alt="TRC・VIRUS">
+		</div>
+		<div class="column">
+			<img class="demo cursor" src="gravity.jpg" style="width:100%" onclick="currentSlide(5)"
+				alt="TRC・GravityXD">
+		</div>
+		<div class="column">
+			<img class="demo cursor" src="flame.jpg" style="width:100%" onclick="currentSlide(6)"
+				alt="TRC・FLAME">
+		</div>
+	</div>
+</div>
+
 
 </div>
-	
+
+	<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+	// Next/previous controls
+	function plusSlides(n) {
+		showSlides(slideIndex += n);
+	}
+
+// Thumbnail image controls
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("demo");
+var captionText = document.getElementById("caption");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex=slides.length} for (i=0; i < slides.length; i++) { slides[i].style.display="none" ; } for (i=0; i
+	< dots.length; i++) { dots[i].className=dots[i].className.replace(" active", "" ); }
+	slides[slideIndex-1].style.display="block" ; dots[slideIndex-1].className +=" active" ;
+	captionText.innerHTML=dots[slideIndex-1].alt; }
+	</script>
+	</section>
 <br>
+<br>
+
+<div class="bg4"> 
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>
+
+<section class="lastweb">
+	<br>
+	<br>
+	<br>
+<a class="int" href="https://www.instagram.com/theroyalechampions/">INSTAGRAM</a>
+<a class="fb" href="https://www.facebook.com/theroyalechampions">FACEBOOK</a>
+<br>
+<br>
+<br>
+</section>
+
 </body>
 </html>
 	
